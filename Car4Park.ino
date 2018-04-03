@@ -8,7 +8,7 @@ GP2Y0A21 sideFrontIR; //measure distances between 12 and 78 centimeters
 
 const int SIDE_FRONT_PIN = A8;
 const float fSpeed = 0.5; //a ground speed (m/sec) for going forward
-const float bSpeed = -0.5; //a ground speed (m/sec)y for going backward
+const float bSpeed = -2; //a ground speed (m/sec)y for going backward
 const int lDegrees = -75; //degrees to turn left
 const int rDegrees = 75; //degrees to turn right
 const int encoderLeftPin = 2;
@@ -40,30 +40,38 @@ void loop() {
   gyro.update();
   car.updateMotors();
   straight();
-  //handleInput();
-  //distance();
+  handleInput();
+  distance();
 }
 
 void straight (){
   
   if (gyro.getAngularDisplacement() > 1 && gyro.getAngularDisplacement() < 180){
-    car.setSpeed(fSpeed);
+   // car.setSpeed(fSpeed);
     car.setAngle(-30);
   }
 
   if (gyro.getAngularDisplacement() < 350 && gyro.getAngularDisplacement() > 180){
-    car.setSpeed(fSpeed);
+   // car.setSpeed(fSpeed);
     car.setAngle(5);
   }
 }
+
 void distance (){
- // Serial.println(front.getDistance());
+  Serial.println(front.getDistance());
  // Serial.println(sideFrontIR.getDistance());
-  if(front.getDistance() < 10){
+  if(sideFrontIR.getDistance() < 20 && sideFrontIR.getDistance() > 0 ){
     car.setSpeed(bSpeed);
-    delay(700);
-    car.setSpeed(0);
+    car.setAngle(lDegrees);
+    delay(1000);
+    
+   // car.setSpeed(0);
   }
+
+  if(sideFrontIR.getDistance() > 20){
+    car.setSpeed(fSpeed);
+  }
+  delay (500);
 
 }
 
