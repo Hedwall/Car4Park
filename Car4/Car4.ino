@@ -15,6 +15,8 @@ const int encoderLeftPin = 2;
 const int encoderRightPin = 3;
 const int TRIGGER_PIN = 6; //D6
 const int ECHO_PIN = 7; //D7
+      int counter = 0;
+      int CARS = 0;
 
 void setup() {
   gyro.attach();
@@ -32,6 +34,14 @@ void setup() {
   car.begin(encoderLeft, encoderRight); //initialize the car using the encoders
   // car.enableCruiseControl(); //using default PID values
  //car.enableCruiseControl(12,5,17,30); //using custom values and control frequency
+  int testing = 0 ;
+ for (int i = 0; i < 5; i++){
+   testing += sideFrontIR.getDistance();
+   if (testing == 0){
+    testing += 12;
+   }
+ }
+ CARS = 5 + (testing/5);
  car.setMotorSpeed(30,30);
  delay(100);
  car.setMotorSpeed(66,100);
@@ -43,6 +53,21 @@ void loop() {
   car.updateMotors();
   // straight();
  // distance();
+  count ();
+}
+
+
+void count (){
+  if (sideFrontIR.getDistance() > CARS){
+    counter ++;
+  }else{
+    counter = 0;
+  }
+  
+  if(counter == 20 ){
+  car.setSpeed(0);
+}
+
 }
 
 void straight (){
