@@ -1,0 +1,51 @@
+//Raspberry pi python code:
+
+always start with this
+>>> import serial
+>>> arduinoSerialData = serial.Serial('/dev/ttyACM0',9600)
+
+
+// Arduino code for reading: 
+import time library
+
+#include “time.h”
+
+void setup(){
+serial.begin(9600);
+Serial.print("Program started\n");
+
+}
+
+void loop(){
+serial.print(“what ever you want”)
+serial.print(frontSensor)
+}
+
+void frontSensor(){
+
+//*insert sensor data reading*
+}
+
+
+// Arduino code for writing:
+
+const int frontLeftMotor = some pin
+
+void setup(){
+pinMode(frontLeftMotor, output)
+serial.begin(9600);
+ Serial.print("Program started\n");
+
+}
+
+void loop(){
+if (Serial.available() > 0){
+	dataIN = Serial.read();
+	if(dataIN == ‘0’){
+		stop();
+		}
+	else{
+	dataIN = set.speed();
+	  }
+   }
+  }
