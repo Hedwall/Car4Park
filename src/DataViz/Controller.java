@@ -34,18 +34,21 @@ public class Controller {
 
 
     public void testButton() throws InterruptedException {
+        Random rand = new Random();
+        for (int i = 0; i < 10; i++) {
 
-        for (int i = 0; i < 25; i++) {
-            Random rand = new Random();
             int testVal = rand.nextInt(65);
 
-            setSensorBack(testVal);
-            setSensorFront(testVal);
-            setSensorSide(testVal);
-
+            if (testVal < 10) {
+                testVal += rand.nextInt(15);
+                setSensorBack(testVal);
+            }else if (testVal <25) {
+                setSensorFront(testVal);
+            }else{
+                testVal += rand.nextInt(15)-20;
+                setSensorSide(testVal);
+            }
         }
-
-        testButton();
     }
 
     public void setDirection(int value){

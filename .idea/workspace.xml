@@ -7,24 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aad4d3-071b-4f19-85dd-deff41e4c6c6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_kurbatov_firmata4j_2_3_6.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_scream3r_jssc_2_8_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_api_1_8_0_beta2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/SerialReader/SerialRead.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/Car4Park.iml" afterPath="$PROJECT_DIR$/.idea/Car4Park.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/com_pi4j_pi4j_core_1_2_SNAPSHOT.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Car4/Car4.ino" afterPath="$PROJECT_DIR$/Car4/Car4.ino" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Car4Park/Car4Park.jar" afterPath="$PROJECT_DIR$/out/artifacts/Car4Park/Car4Park.jar" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/Car4Park/Car4Park.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/Car4Park/Car4Park.jnlp" />
-      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/sample/Controller.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/sample/Green.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/sample/Main.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/sample/Red.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/sample/Trial.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Controller.class" afterPath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Controller.class" />
       <change beforePath="$PROJECT_DIR$/src/DataViz/Controller.java" afterPath="$PROJECT_DIR$/src/DataViz/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/DataViz/Trial.fxml" afterPath="$PROJECT_DIR$/src/DataViz/Trial.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/SerialReader/SerialReader.java" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,9 +38,11 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="510">
+              <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
+                <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+                <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
                 <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
                 <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
                 <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
@@ -354,7 +343,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31495228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31495228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -415,6 +404,8 @@
         <state relative-caret-position="459">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
@@ -542,9 +533,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="510">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
