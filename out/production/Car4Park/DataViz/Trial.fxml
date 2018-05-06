@@ -14,22 +14,22 @@
             <Image url="@Green.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="sensorBack" fitHeight="50.0" fitWidth="50.0" layoutX="122.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="sensorBack" fitHeight="50.0" fitWidth="50.0" layoutX="122.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
          <image>
             <Image url="@Green.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="sensorSide" fitHeight="50.0" fitWidth="50.0" layoutX="179.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@Green.png" />
-         </image>
-      </ImageView>
-      <Text fx:id="valueFront" layoutX="179.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
-      <Text fx:id="valueSide" layoutX="229.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
-      <Text fx:id="valueBack" layoutX="170.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
+      <Text fx:id="valueFront" layoutX="170.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
+      <Text fx:id="valueSide" layoutX="210.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
+      <Text fx:id="valueBack" layoutX="170.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="17.46875" />
       <ImageView fx:id="car" fitHeight="130.0" fitWidth="180.0" layoutX="82.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Car.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sensorSide" fitHeight="50.0" fitWidth="50.0" layoutX="179.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@Green.png" />
          </image>
       </ImageView>
    </children>
