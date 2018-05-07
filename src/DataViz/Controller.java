@@ -4,9 +4,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 
 import java.util.Random;
+
 
 
 public class Controller {
@@ -33,7 +35,7 @@ public class Controller {
     private Image yellow = new Image("DataViz/Yellow.png");
 
 
-    public void testButton() throws InterruptedException {
+    public void testButton()  {
         Random rand = new Random();
         for (int i = 0; i < 10; i++) {
 
@@ -60,24 +62,33 @@ public class Controller {
 
         if (value > 0 && value < 10 ){
             sensorFront.setImage(red);
+            valueFront.setFill(Color.RED);
         }else if (value > 10 && value < 20){
             sensorFront.setImage(yellow);
+            valueFront.setFill(Color.YELLOW);
         }else if(value > 20){
             sensorFront.setImage(green);
+            valueFront.setFill(Color.GREEN);
         }
         valueFront.setText(text);
+
     }
 
     public void setSensorBack(int value) {
         String text = ""+value;
         if (value > 0 && value < 10 ){
             sensorBack.setImage(red);
+            valueBack.setFill(Color.RED);
         }else if (value > 10 && value < 20){
             sensorBack.setImage(yellow);
+            valueBack.setFill(Color.YELLOW);
         }else if(value > 20){
             sensorBack.setImage(green);
+            valueBack.setFill(Color.GREEN);
         }
         valueBack.setText(text);
+
+
     }
 
     public void setSensorSide(int value) {
@@ -90,6 +101,7 @@ public class Controller {
             sensorSide.setImage(green);
         }
         valueSide.setText(text);
+
 
     }
 }
