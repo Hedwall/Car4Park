@@ -1,0 +1,13 @@
+void readAllSensors(){
+
+   Serial.print("result: front, side, back");
+    
+    Serial.print("\t");
+    Serial.print(front.getDistance());
+    Serial.print(" ");
+    Serial.print(side.getDistance());
+    Serial.print(" ");
+    Serial.print(back.getDistance());
+    Serial.print("\n");
+  delay(500);
+  }
