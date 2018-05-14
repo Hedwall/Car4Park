@@ -6,10 +6,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-
 import java.util.Random;
-
-
 
 public class Controller {
 
@@ -29,12 +26,18 @@ public class Controller {
     private Text valueBack;
     @FXML
     private Text valueSide;
+    @FXML
+    private Button readingButton;
 
     private Image green = new Image("DataViz/Green.png");
     private Image red = new Image("DataViz/Red.png");
     private Image yellow = new Image("DataViz/Yellow.png");
 
 
+    public void startReading() {
+
+
+    }
     public void testButton()  {
         Random rand = new Random();
         for (int i = 0; i < 10; i++) {
@@ -71,7 +74,6 @@ public class Controller {
             valueFront.setFill(Color.GREEN);
         }
         valueFront.setText(text);
-
     }
 
     public void setSensorBack(int value) {
@@ -104,4 +106,6 @@ public class Controller {
 
 
     }
+
+
 }

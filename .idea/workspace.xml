@@ -7,7 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3aad4d3-071b-4f19-85dd-deff41e4c6c6" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SerialReader/serialRead.java" afterPath="$PROJECT_DIR$/src/SerialReader/serialRead.java" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Controller.class" afterPath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Controller.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Trial.fxml" afterPath="$PROJECT_DIR$/out/production/Car4Park/DataViz/Trial.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/DataViz/Controller.java" afterPath="$PROJECT_DIR$/src/DataViz/Controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/DataViz/Trial.fxml" afterPath="$PROJECT_DIR$/src/DataViz/Trial.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/SerialReader/SerialRead.java" afterPath="" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SerialReader/serialRead.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SerialReader/SerialRead.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Car4Park/SerialReader/SerialRead.class" afterPath="$PROJECT_DIR$/out/production/Car4Park/SerialReader/SerialRead.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Car4Park.iml" afterPath="$PROJECT_DIR$/.idea/Car4Park.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +43,13 @@
       <file leaf-file-name="serialRead.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SerialReader/serialRead.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="102">
               <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,11 +57,57 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+                <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+                <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+                <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+                <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+=======
+            <state relative-caret-position="306">
+              <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
+              <folding>
+                <element signature="imports" expanded="true" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+=======
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
               <folding />
             </state>
           </provider>
@@ -46,8 +116,13 @@
       <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="85">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+=======
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
               <folding />
             </state>
           </provider>
@@ -91,9 +166,22 @@
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/readserialport/SerialReader.java" />
         <option value="$PROJECT_DIR$/src/SerialReader/SerialReader.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/SerialReader/SerialRead.java" />
+        <option value="$PROJECT_DIR$/src/DataViz/Trial.fxml" />
+        <option value="$PROJECT_DIR$/src/SerialReader/ReadThread.java" />
+        <option value="$PROJECT_DIR$/src/DataViz/Main.java" />
+        <option value="$PROJECT_DIR$/src/DataViz/Controller.java" />
+        <option value="$PROJECT_DIR$/src/DataViz/ReadThread.java" />
+=======
         <option value="$PROJECT_DIR$/src/DataViz/Controller.java" />
         <option value="$PROJECT_DIR$/src/SerialReader/SerialRead.java" />
         <option value="$PROJECT_DIR$/src/SerialReader/SimpleRead.java" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/SerialReader/serialRead.java" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/SerialReader/serialRead.java" />
       </list>
@@ -191,6 +279,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -202,6 +295,20 @@
             <path>
               <item name="Car4Park" type="b2602c69:ProjectViewProjectNode" />
               <item name="Car4Park" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car4Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car4Park" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Car4Park" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Car4Park" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,19 +317,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="DataViz" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Car4Park" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Car4Park" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SerialReader" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
       <pane id="Scratches" />
       <pane id="AndroidView" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,7 +480,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31495228" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -392,6 +518,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18374817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -402,7 +529,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296355" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -443,18 +574,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataViz/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/ReadThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/SerialReader/SerialRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Trial.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Trial.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SerialReader/SerialRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
+=======
     <entry file="file://$PROJECT_DIR$/src/SerialReader/serialRead.java">
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
           </folding>
         </state>
       </provider>
@@ -482,11 +723,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SerialReader/serialRead.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="204">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -494,6 +741,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -502,6 +755,11 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="221">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+=======
         <state relative-caret-position="612">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
         </state>
@@ -525,6 +783,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -561,6 +820,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -568,6 +838,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -586,6 +862,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
+            <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -593,6 +880,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -600,6 +893,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -607,6 +906,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -614,6 +919,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -621,6 +932,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -628,6 +945,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -642,6 +965,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -661,13 +990,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readserialport/SerialReader.java" />
     <entry file="file://$PROJECT_DIR$/src/SerialReader/SerialReader.java" />
+<<<<<<< HEAD
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_152/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
     <entry file="file://$PROJECT_DIR$/src/DataViz/Trial.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="85">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+=======
         <state relative-caret-position="438">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
         </state>
       </provider>
     </entry>
@@ -678,14 +1024,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/SerialReader/SerialRead.java">
+=======
     <entry file="file://$PROJECT_DIR$/src/DataViz/Main.java">
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+            <element signature="method#setDirection#0;class#Controller#0" expanded="false" />
+=======
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -700,6 +1060,7 @@
           <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="method#testButton#0;class#Controller#0" expanded="false" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
             <element signature="method#setSensorFront#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorBack#0;class#Controller#0" expanded="false" />
             <element signature="method#setSensorSide#0;class#Controller#0" expanded="false" />
@@ -707,10 +1068,53 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DataViz/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/SerialReader/serialRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DataViz/ReadThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+=======
+>>>>>>> fe7f1edb5530036a618ac8f8a37b5950408a122f
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="4" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+>>>>>>> c6c375dd5d259329ac9aaa1678272025f8fde26b
           <folding />
         </state>
       </provider>
