@@ -5,8 +5,11 @@ import jssc.SerialPortException;
 
 public class serialRead {
 
+
+    public void getData() {
     SerialPort serialPort = new SerialPort("COM2");
-try {
+    try
+    {
         serialPort.openPort();//Open serial port
         serialPort.setParams(SerialPort.BAUDRATE_9600,
                 SerialPort.DATABITS_8,
@@ -15,9 +18,9 @@ try {
         serialPort.writeBytes("C45".getBytes());
         serialPort.closePort();//Close serial port
     }
-catch (
-    SerialPortException ex) {
+    catch(SerialPortException ex){
         System.out.println(ex);
     }
+}
 
 }
