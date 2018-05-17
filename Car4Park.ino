@@ -1,16 +1,20 @@
 #include <Smartcar.h>
+
+// Sensors used
 Gyroscope gyro;
 Odometer encoderLeft, encoderRight;
 Car car;
 SR04 front;
 SR04 back;
 SR04 side;
-GP2Y0A21 sideFrontIR; //measure distances between 12 and 78 centimeters
-const int SIDE_FRONT_PIN = A8;
+
+// Variables
 const float fSpeed = 0.5; //a ground speed (m/sec) for going forward
 const float bSpeed = -2; //a ground speed (m/sec)y for going backward
 const int lDegrees = -75; //degrees to turn left
 const int rDegrees = 75; //degrees to turn right
+
+const int SIDE_FRONT_PIN = A8;
 const int encoderLeftPin = 2;
 const int encoderRightPin = 3;
 const int TRIGGER_PIN = 6; //D6
@@ -19,54 +23,52 @@ const int TRIGGER_PIN1 = A12;
 const int TRIGGER_PIN2 = A8;
 const int ECHO_PIN2 = A9;
 const int ECHO_PIN1 = A13;
-int count = 0;
-int motorSpeed = 45; //40% of the max speed
 
-boolean backing = false;
+int motorSpeed = 65; //40% of the max speed
+
+
 
 
 void setup() {
+  // Attaching sensors
   gyro.attach();
-  sideFrontIR.attach(SIDE_FRONT_PIN);
   front.attach(TRIGGER_PIN, ECHO_PIN); //trigger pin, echo pin
   back.attach(TRIGGER_PIN1, ECHO_PIN1);
   side.attach(TRIGGER_PIN2, ECHO_PIN2);
   encoderLeft.attach(encoderLeftPin);
   encoderRight.attach(encoderRightPin);
   delay(1500);
+  
   Serial.begin(9600);
   Serial1.begin(9600);
   Serial3.begin(9600);
- 
   gyro.begin(90);
-  Gyroscope gyro();
-  car.begin(encoderLeft, encoderRight); //initialize the car using the encoders
+  
+  int offset = gyro.calibrate();
+  Gyroscope gyro(offset);
+
+ 
+  car.begin(encoderRight, encoderLeft, gyro); //initialize the car using the encoders
+
+  car.setMotorSpeed(40,51);
+   
 
 
- car.setMotorSpeed(30, 45);
-   delay(10);
-    car.setMotorSpeed(20,31);
-
-
-  //rotateOnSpot(-45);
 }
 
 void loop(){
   
-Serial.println(side.getDistance());
+sensorPrint();
 car.updateMotors();
-
-ir();
-
-
-
+gyro.update();
+findSpot();
   
 }
 
 
 boolean check = false;
 
-void ir(){
+void findSpot(){
 
   if(check == false){
     
@@ -91,111 +93,63 @@ void ir(){
 
 }
 
-
-
-void distance(){
-
- // Serial.println(front.getDistance();
- // Serial.println(sideFrontIR.getDistance());
- 
-  if(back.getDistance() < 15 && back.getDistance() > 0 ){
-
-    backing = true;
-  
-  }
-} 
-
-
-
-
-
 void parking(){
 
-if(side.getDistance()<20){
- while(side.getDistance()<20){
-  
-  
- car.setMotorSpeed(-30, -45);
-   delay(10);
-    car.setMotorSpeed(-20,-31);
-
-  }
-}else if(side.getDistance()>20 || side.getDistance()==0){
-   car.setMotorSpeed(-30, -45);
-   delay(10);
-    car.setMotorSpeed(-20,-31);
-    delay(300);
-}
-
-/*
- car.setMotorSpeed(-25,-33);
- car.setAngle(lDegrees);
-delay(1000);
-*/
+// When a spot is found rotate 45 degrees 
+rotateOnSpot(-45);
+delay(600);
 
 
-rotateOnSpot(-50);
-delay(500);
-
+// Back up into the spot until close enough to wall.
 parkingFinal();
+delay(300);
 
-rotateOnSpot(50);
-/*
-while(back.getDistance()>7 || back.getDistance()==0){
-  car.setMotorSpeed(-20,-31);
-//delay(1200);
-}
+// Last rotation to be in line.
+rotateOnSpot(45);
+rotateOnSpot(45);
 
-*/
+delay(300);
+// Method to make the car stop at any chance. 
+stopIt();
 
-/*
-if(backing == false){
-car.setMotorSpeed(-20,-31);
-}
-
-
-
-
-//delay(1300);
-
-rotateOnSpot(35);
-delay(500);
-*/
-/*
-while(back.getDistance()>7 || back.getDistance()==0){
-  car.setMotorSpeed(-22,-36);
-//delay(1200);
-}
-*/
-
-
-
-/*
-while(back.getDistance()!=front.getDistance()){
-  if(back.getDistance()>front.getDistance()){
-  car.setMotorSpeed(20,-33);
-  }
-  else if(back.getDistance()<front.getDistance()){
-    car.setMotorSpeed(-20,33);
-  }
-}
-*/
 car.setMotorSpeed(0,0);
-
-
-
-
-
 
 }
 
 void parkingFinal(){
-  while(back.getDistance()>20 || back.getDistance()==0){
-  car.setMotorSpeed(-22,-36);
+  
+   if ( back.getDistance() > 15 || back.getDistance() == 0 ){
+    
+    car.go(- (back.getDistance() * 0.5));
+    
+    
+    }
+ 
+  }
 
+
+void stopIt(){
+while( back.getDistance() >= 0) {
+  car.setMotorSpeed(0,0);
+  car.stop();
+  
+  } 
+  
+  }
+
+
+void sensorPrint(){
+
+  String sside = "s";
+  String sfront ="f";
+  String sback = "b";
+  Serial.println(sfront + front.getDistance());
+  Serial.println(sside + side.getDistance());
+  Serial.println(sback + back.getDistance());
+  
 }
 
-}
+
 
 
 void rotateOnSpot(int targetDegrees) {
@@ -224,13 +178,5 @@ void rotateOnSpot(int targetDegrees) {
   }
   car.stop(); //we have reached the target, so stop the car
 }
-
-
-
-
-
-
-
-
 
 
