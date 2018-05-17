@@ -58,10 +58,12 @@ void setup() {
 
 void loop(){
   
+
 sensorPrint();
 car.updateMotors();
 gyro.update();
 findSpot();
+
   
 }
 
@@ -152,6 +154,7 @@ void sensorPrint(){
 
 
 
+
 void rotateOnSpot(int targetDegrees) {
   targetDegrees %= 360; //put it on a (-360,360) scale
   if (!targetDegrees) return; //if the target degrees is 0, don't bother doing anything
@@ -178,5 +181,4 @@ void rotateOnSpot(int targetDegrees) {
   }
   car.stop(); //we have reached the target, so stop the car
 }
-
 
