@@ -58,11 +58,11 @@ void setup() {
 
 void loop(){
   
-side.getDistance();
+
+sensorPrint();
 car.updateMotors();
 gyro.update();
 findSpot();
-
 
   
 }
@@ -120,12 +120,13 @@ car.setMotorSpeed(0,0);
 
 void parkingFinal(){
   
-   while ( back.getDistance() > 15 || back.getDistance() == 0 ){
+   if ( back.getDistance() > 15 || back.getDistance() == 0 ){
     
-    car.setMotorSpeed(-25,-36);
+    car.go(- (back.getDistance() * 0.5));
+    
     
     }
-  
+ 
   }
 
 
@@ -138,6 +139,17 @@ while( back.getDistance() >= 0) {
   
   }
 
+
+void sensorPrint(){
+
+  String sside = "s";
+  String sfront ="f";
+  String sback = "b";
+  Serial.println(sfront + front.getDistance());
+  Serial.println(sside + side.getDistance());
+  Serial.println(sback + back.getDistance());
+  
+}
 
 
 
@@ -169,8 +181,4 @@ void rotateOnSpot(int targetDegrees) {
   }
   car.stop(); //we have reached the target, so stop the car
 }
-
-
-
-
 
