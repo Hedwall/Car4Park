@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Car4Park.jnlp">
+  <information>
+    <title>Car4Park</title>
+    <vendor>Unknown</vendor>
+    <description>Car4Park</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Car4Park.jar" size="21625" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="DataViz.Main"  name="Car4Park" />
+  <update check="background"/>
+</jnlp>
