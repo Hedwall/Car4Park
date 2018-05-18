@@ -1,4 +1,4 @@
-package DataViz.Model;
+package Model;
 
 public class dataStore {
 

@@ -1,9 +1,8 @@
 package data;
 
-import DataViz.Model.dataStore;
-import jssc.SerialPort;
+import Model.dataStore;
 
-public class readerThread implements Runnable {
+public class readerThread extends Thread {
 
     dataStore carVal;
 

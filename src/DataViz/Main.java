@@ -1,20 +1,18 @@
 package DataViz;
 
-import DataViz.Model.dataStore;
+import Model.dataStore;
 import data.readerThread;
 import data.sensorThread;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-
         dataStore carVal = new dataStore();
         FXMLLoader window = new FXMLLoader((getClass().getResource("Trial.fxml")));
         Parent root = window.load();
@@ -26,8 +24,6 @@ public class Main extends Application {
         Thread t2 = new Thread(new sensorThread(carVal,apply));
         t1.start();
         t2.start();
-
-
     }
 
 

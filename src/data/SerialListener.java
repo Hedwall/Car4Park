@@ -1,9 +1,6 @@
 package data;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import DataViz.Model.dataStore;
+import Model.dataStore;
 import jssc.SerialPort;
 import jssc.SerialPortEvent;
 import jssc.SerialPortEventListener;
@@ -17,7 +14,7 @@ public class SerialListener implements SerialPortEventListener {
     StringBuilder message = new StringBuilder();
     dataStore carVal;
 
-    SerialListener(SerialPort serialPort, dataStore carVal){
+    public SerialListener(SerialPort serialPort, dataStore carVal){
         this.serialPort = serialPort;
         this.carVal = carVal;
     }

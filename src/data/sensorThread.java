@@ -1,9 +1,7 @@
 package data;
 
 import DataViz.Controller;
-import DataViz.Model.dataStore;
-import data.SerialConnection;
-import jssc.SerialPort;
+import Model.dataStore;
 
 public class sensorThread extends Thread {
 

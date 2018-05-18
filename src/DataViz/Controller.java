@@ -15,15 +15,11 @@ import java.util.Random;
 public class Controller {
 
     @FXML
-    private Button startButton = new Button();
-    @FXML
     private ImageView sensorFront;
     @FXML
     private ImageView sensorBack;
     @FXML
     private ImageView sensorSide;
-    @FXML
-    private ImageView Logo;
     @FXML
     private ImageView car;
     @FXML
@@ -32,9 +28,6 @@ public class Controller {
     private Text valueBack;
     @FXML
     private Text valueSide;
-    @FXML
-    private Button readingButton;
-
 
     private Image green = new Image("DataViz/Green.png");
     private Image red = new Image("DataViz/Red.png");
