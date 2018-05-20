@@ -23,24 +23,10 @@ const int TRIGGER_PIN1 = A12;
 const int TRIGGER_PIN2 = A8;
 const int ECHO_PIN2 = A9;
 const int ECHO_PIN1 = A13;
-<<<<<<< HEAD
-<<<<<<< HEAD
-int count = 0;
-int motorSpeed = 45; //40% of the max speed
-const int input[3] = {7, A9, A13}; //using a constant would keep you from making your error
-int result[3];
-=======
->>>>>>> 590e034b70c3cd2695c26b41801ed267238c9e15
 
 int motorSpeed = 65; //40% of the max speed
 
 
-=======
-
-int motorSpeed = 65; //40% of the max speed
-
-
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
 
 
 void setup() {
@@ -64,76 +50,30 @@ void setup() {
  
   car.begin(encoderRight, encoderLeft, gyro); //initialize the car using the encoders
 
-<<<<<<< HEAD
-<<<<<<< HEAD
- car.setMotorSpeed(30, 45);
- delay(10);
- car.setMotorSpeed(20,31);
-=======
   car.setMotorSpeed(40,51);
    
->>>>>>> 590e034b70c3cd2695c26b41801ed267238c9e15
-=======
-  car.setMotorSpeed(40,51);
-   
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
 
 
 }
 
 void loop(){
   
-<<<<<<< HEAD
-side.getDistance();
-car.updateMotors();
-<<<<<<< HEAD
-// ir();
-readAllSensors();
-=======
-gyro.update();
-findSpot();
-=======
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
 
 sensorPrint();
 car.updateMotors();
 gyro.update();
 findSpot();
 
->>>>>>> 590e034b70c3cd2695c26b41801ed267238c9e15
   
 }
 
 
 boolean check = false;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-void readAllSensors(){
-  for (byte y = 0; y < 3; y++)
-  {
-    result[y] = analogRead(input[y]);
-  }
-   Serial.print("result: front, side, back");
-  for (byte y = 0; y < 3; y++)
-  {
-    
-    Serial.print("\t");
-    Serial.print(result[y]);
-  }
-  delay(500);
-  }
-  
-void ir(){
-=======
 void findSpot(){
->>>>>>> 590e034b70c3cd2695c26b41801ed267238c9e15
-=======
-void findSpot(){
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
 
   if(check == false){
-  
+    
   if(side.getDistance()>20){
   encoderLeft.begin();
   encoderRight.begin();
@@ -180,26 +120,6 @@ car.setMotorSpeed(0,0);
 
 void parkingFinal(){
   
-<<<<<<< HEAD
-   while ( back.getDistance() > 15 || back.getDistance() == 0 ){
-    
-    car.setMotorSpeed(-25,-36);
-    
-    }
-  
-  }
-
-
-void stopIt(){
-while( back.getDistance() >= 0) {
-  car.setMotorSpeed(0,0);
-  car.stop();
-  
-  } 
-  
-  }
-
-=======
    if ( back.getDistance() > 15 || back.getDistance() == 0 ){
     
     car.go(- (back.getDistance() * 0.5));
@@ -230,7 +150,6 @@ void sensorPrint(){
   Serial.println(sback + back.getDistance());
   
 }
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
 
 
 
@@ -262,11 +181,3 @@ void rotateOnSpot(int targetDegrees) {
   }
   car.stop(); //we have reached the target, so stop the car
 }
-
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> b37d4c59722a63ba11f0b099d308d6384882c587
