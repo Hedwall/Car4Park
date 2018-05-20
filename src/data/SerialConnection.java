@@ -8,23 +8,25 @@ import jssc.SerialPortException;
 
 public class SerialConnection {
    private static boolean conn;
-   private SerialPort serialPort = new SerialPort("COM3");
-   private SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
-   private SerialPort serialPort1 = new SerialPort("/dev/ttyAMA1");
+   private SerialPort serialPort ;
 
     public SerialPort getSerialPort() {
         return serialPort;
     }
 
+    public void setSerialPort(SerialPort serialPort) {
+        this.serialPort = serialPort;
+    }
+
     public void run(dataStore carVal) throws SerialPortException {
 
-        try{
+      /*  try{
             serialPort0.openPort();
             serialPort = serialPort0;
         } catch (SerialPortException e){
             serialPort1.openPort();
             serialPort = serialPort1;
-        }
+        }*/
 
         try {
             System.out.println("Port opened: " + serialPort.openPort());
