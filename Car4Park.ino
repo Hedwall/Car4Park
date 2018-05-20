@@ -1,3 +1,6 @@
+
+     
+
 #include <Smartcar.h>
 
 // Sensors used
@@ -50,7 +53,7 @@ void setup() {
  
   car.begin(encoderRight, encoderLeft, gyro); //initialize the car using the encoders
 
-  car.setMotorSpeed(40,51);
+  
    
 
 
@@ -63,10 +66,21 @@ sensorPrint();
 car.updateMotors();
 gyro.update();
 findSpot();
+startParking();
+
 
   
 }
 
+void startParking(){
+if (Serial.available()){
+    String input = Serial.readStringUntil('\n');
+    if(input == "5"){
+      car.setMotorSpeed(40,51);
+      
+    }
+}
+}
 
 boolean check = false;
 
@@ -181,3 +195,4 @@ void rotateOnSpot(int targetDegrees) {
   }
   car.stop(); //we have reached the target, so stop the car
 }
+
