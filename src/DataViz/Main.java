@@ -17,12 +17,12 @@ public class Main extends Application {
         FXMLLoader window = new FXMLLoader((getClass().getResource("Trial.fxml")));
         Parent root = window.load();
         Controller apply = (Controller) window.getController();
+        apply.setCarVal(carVal);
         primaryStage.setTitle("Car4Park");
         primaryStage.setScene(new Scene(root, 600, 350));
         primaryStage.show();
-        Thread t1 = new Thread(new readerThread(carVal));
+
         Thread t2 = new Thread(new sensorThread(carVal,apply));
-        t1.start();
         t2.start();
     }
 

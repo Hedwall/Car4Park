@@ -8,12 +8,11 @@ import jssc.SerialPortException;
 
 public class SerialConnection {
    private static boolean conn;
+   private SerialPort serialPort = new SerialPort("COM3");
+   private SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
+   private SerialPort serialPort1 = new SerialPort("/dev/ttyAMA1");
 
     public void run(dataStore carVal) throws SerialPortException {
-
-        SerialPort serialPort = new SerialPort("COM3");
-        SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
-        SerialPort serialPort1 = new SerialPort("/dev/ttyAMA1");
 
         try{
             serialPort0.openPort();
@@ -34,6 +33,9 @@ public class SerialConnection {
             }
             byte[] buffer;
 
+            String command = "5"+"\n";
+            byte[] commands = command.getBytes();
+            serialPort.writeBytes(commands);
             serialPort.addEventListener(new SerialListener(serialPort, carVal));
             /*conn = false;
             buffer = serialPort.readBytes(25);
@@ -52,4 +54,5 @@ public class SerialConnection {
             System.out.println(ex);
         }
     }
+
 }

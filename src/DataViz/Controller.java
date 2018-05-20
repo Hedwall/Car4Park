@@ -1,5 +1,7 @@
 package DataViz;
 
+import Model.dataStore;
+import data.SerialConnection;
 import data.readerThread;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
@@ -9,6 +11,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
+import jssc.SerialPort;
+import jssc.SerialPortException;
 
 import java.util.Random;
 
@@ -31,9 +35,15 @@ public class Controller {
     @FXML
     private Button startParking;
 
+
     private Image green = new Image("DataViz/Green.png");
     private Image red = new Image("DataViz/Red.png");
     private Image yellow = new Image("DataViz/Yellow.png");
+    private dataStore carVal;
+
+    public void setCarVal(dataStore carVal) {
+        this.carVal = carVal;
+    }
 
     public void setSensorFront(int value) {
         String text = ""+value;
@@ -112,8 +122,9 @@ public class Controller {
         valueSide.setText(text);
     }
 
-    public void startPark(){
-        
+    public void startPark() {
+        Thread t1 = new Thread(new readerThread(carVal));
+        t1.start();
     }
 
 }
