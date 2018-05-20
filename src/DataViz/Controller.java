@@ -18,6 +18,8 @@ import java.util.Random;
 
 public class Controller {
 
+    private SerialPort serialPort;
+
     @FXML
     private ImageView sensorFront;
     @FXML
@@ -34,12 +36,18 @@ public class Controller {
     private Text valueSide;
     @FXML
     private Button startParking;
+    @FXML
+    private Button parallelPark;
 
 
     private Image green = new Image("DataViz/Green.png");
     private Image red = new Image("DataViz/Red.png");
     private Image yellow = new Image("DataViz/Yellow.png");
     private dataStore carVal;
+
+    public void setSerialPort(SerialPort serialPort) {
+        this.serialPort = serialPort;
+    }
 
     public void setCarVal(dataStore carVal) {
         this.carVal = carVal;
@@ -122,9 +130,24 @@ public class Controller {
         valueSide.setText(text);
     }
 
-    public void startPark() {
-        Thread t1 = new Thread(new readerThread(carVal));
-        t1.start();
+    public void startPark( ) {
+        String command = "5"+"\n";
+        byte[] commands = command.getBytes();
+        try {
+            serialPort.writeBytes(commands);
+        } catch (SerialPortException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void parallelPark(){
+        String command = "6"+"\n";
+        byte[] commands = command.getBytes();
+        try {
+            serialPort.writeBytes(commands);
+        } catch (SerialPortException e) {
+            e.printStackTrace();
+        }
     }
 
 }

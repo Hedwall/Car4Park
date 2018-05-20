@@ -6,17 +6,10 @@ import jssc.SerialPortException;
 public class readerThread extends Thread {
 
     dataStore carVal;
-    SerialConnection virtue = new SerialConnection();
+    SerialConnection virtue;
 
-    public readerThread(dataStore carVal) {
+    public readerThread(dataStore carVal, SerialConnection virtue) {
         this.carVal = carVal;
-    }
-
-    public SerialConnection getVirtue() {
-        return virtue;
-    }
-
-    public void setVirtue(SerialConnection virtue) {
         this.virtue = virtue;
     }
 

@@ -12,15 +12,18 @@ public class SerialConnection {
    private SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
    private SerialPort serialPort1 = new SerialPort("/dev/ttyAMA1");
 
+    public SerialPort getSerialPort() {
+        return serialPort;
+    }
+
     public void run(dataStore carVal) throws SerialPortException {
 
         try{
             serialPort0.openPort();
             serialPort = serialPort0;
         } catch (SerialPortException e){
-           /* serialPort1.openPort();
+            serialPort1.openPort();
             serialPort = serialPort1;
-        */
         }
 
         try {
@@ -33,9 +36,7 @@ public class SerialConnection {
             }
             byte[] buffer;
 
-            String command = "5"+"\n";
-            byte[] commands = command.getBytes();
-            serialPort.writeBytes(commands);
+
             serialPort.addEventListener(new SerialListener(serialPort, carVal));
             /*conn = false;
             buffer = serialPort.readBytes(25);
