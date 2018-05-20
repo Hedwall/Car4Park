@@ -33,7 +33,7 @@ public class SerialListener implements SerialPortEventListener {
 
                             case 'f':
                                 carVal.setFront(Integer.parseInt(message.toString().replaceAll("[\\D]", "").trim()));
-                                // System.out.println("Front is: "+carVal.getFront());
+                                //System.out.println("Front is: "+carVal.getFront());
                                 break;
                             case 's':
                                 carVal.setSide(Integer.parseInt(message.toString().replaceAll("[\\D]", "").trim()));
@@ -48,7 +48,6 @@ public class SerialListener implements SerialPortEventListener {
                         }
                         message.setLength(0);
                     } else {
-
                         message.append((char)b);
                     }
                 }

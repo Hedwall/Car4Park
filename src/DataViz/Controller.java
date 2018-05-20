@@ -28,6 +28,8 @@ public class Controller {
     private Text valueBack;
     @FXML
     private Text valueSide;
+    @FXML
+    private Button startParking;
 
     private Image green = new Image("DataViz/Green.png");
     private Image red = new Image("DataViz/Red.png");
@@ -108,6 +110,10 @@ public class Controller {
             }
         }
         valueSide.setText(text);
+    }
+
+    public void startPark(){
+        
     }
 
 }

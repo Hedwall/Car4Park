@@ -1,6 +1,7 @@
 package data;
 
 import Model.dataStore;
+import jssc.SerialPortException;
 
 public class readerThread extends Thread {
 
@@ -13,7 +14,11 @@ public class readerThread extends Thread {
     @Override
     public void run(){
         SerialConnection virtue = new SerialConnection();
-        virtue.run(carVal);
+        try {
+            virtue.run(carVal);
+        } catch (SerialPortException e) {
+            e.printStackTrace();
+        }
     }
 
 }

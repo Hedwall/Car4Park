@@ -9,9 +9,21 @@ import jssc.SerialPortException;
 public class SerialConnection {
    private static boolean conn;
 
-    public void run(dataStore carVal){
+    public void run(dataStore carVal) throws SerialPortException {
+
         SerialPort serialPort = new SerialPort("COM3");
-        //SerialPort serialPort = new SerialPort("/dev/tty.usbmodem1441");
+        SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
+        SerialPort serialPort1 = new SerialPort("/dev/ttyAMA1");
+
+        try{
+            serialPort0.openPort();
+            serialPort = serialPort0;
+        } catch (SerialPortException e){
+           /* serialPort1.openPort();
+            serialPort = serialPort1;
+        */
+        }
+
         try {
             System.out.println("Port opened: " + serialPort.openPort());
             conn = true;
@@ -21,7 +33,6 @@ public class SerialConnection {
                 Logger.getLogger(SerialConnection.class.getName()).log(Level.SEVERE, null, ex);
             }
             byte[] buffer;
-            System.out.println("Params setted: " + serialPort.setParams(9600, 8, 1, 0));
 
             serialPort.addEventListener(new SerialListener(serialPort, carVal));
             /*conn = false;
