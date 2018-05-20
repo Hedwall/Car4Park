@@ -18,6 +18,9 @@ public class Main extends Application {
         dataStore carVal = new dataStore();
         SerialConnection virtue = new SerialConnection();
         SerialPort serialPort0 = new SerialPort("/dev/ttyAMA0");
+        if(serialPort0.isOpened()){
+            serialPort0.closePort();
+        }
         serialPort0.openPort();
         virtue.setSerialPort(serialPort0);
         virtue.run(carVal);
